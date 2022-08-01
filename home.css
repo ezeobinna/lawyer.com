@@ -7,6 +7,7 @@ body{
     width: 100%;
     font-family: 'Questrial', sans-serif;
     font-weight: light;
+    height: 100vh;
 }
 .container{
     overflow: hidden;
@@ -865,6 +866,443 @@ body{
         text-align: center;
         font-size: 12px;
         color: rgba(117, 116, 116, 0.8);
+        clip-path: polygon(6% 0%, 100% 0%, 100% 100%, 0% 100%);
+        z-index: 5;
+    }
+}
+
+@media (min-width:1200px) {
+    .container{
+        background: url(./pexels-sora-shimazaki-5668481.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding-block: 50px;
+    }
+    .container::before{
+        content: '';
+        background-color: rgba(255, 255, 255, 1);
+        position: absolute;
+        width: 85%;
+        height: 110%;
+        bottom: -1px;
+        clip-path: polygon(0 0, 100% 0%, 68% 100%, 0% 100%);
+        z-index: 1;
+    }
+    .container::after{
+        content: '';
+        background-color: rgba(177, 182, 238, 0.4);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        z-index: 0;
+    } 
+    .blue_bg,
+    .white_bg{
+        display: none;
+    }
+    .section1{
+        display: none;
+        z-index: 10;
+    }
+    .blues{
+        display: flex;
+        align-items: center;
+    }
+    .lawyer_title1{
+        display: block;
+        width: 50%;
+        background-color: rgb(12, 12, 111);
+        z-index: 19;
+        padding: 15px 0 20px 80px;
+        clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+    }
+    .lawyercom1_1{
+        color: white;
+        font-size: 3rem;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: -10px;
+        cursor: pointer;
+    }
+    .lawyercom2_2{
+        color: white;
+        font-size: 1.2rem;
+        letter-spacing: 3.6px;
+        font-family: 'Playfair Display', serif;
+    }
+    .free{
+        display: flex;
+        width: 40%;
+        background-color: rgb(17, 116, 155);
+        z-index: 9;
+        padding: 15px 0 15px 10px;
+        clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+        margin-left: -60px;
+        justify-content: center;
+    }
+    .free1 a{
+        text-decoration: none;
+        color: white;
+        font-size: 2.5rem;
+        font-family: 'Playfair Display', serif;
+    }
+    .freetext{
+        color: white;
+        font-size: 1rem;
+        letter-spacing: 3.5px;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: -5px;
+    }
+    .section2,
+    .section3{
+        display: none;
+    }
+    .bodycontent{
+        display: flex;
+        /* padding: 40px 0 0px 60px; */
+        padding: 50px 0 0px 80px;
+        position: relative;
+    }
+    .section2_2{
+        width: 40%;
+        background-color: white;
+        padding-right: 50px;
+        z-index: 2;
+    }
+    .lawyer_subtitle1{
+        margin-bottom: 30px;
+    }
+    .top_injury1{
+        color: rgb(12, 12, 111);
+        /* font-size: 30px; */
+        font-size: 2rem;
+        position: relative;
+        padding-bottom: 20px;
+        margin-top: 30px;
+    }
+    .top_injury1::before{
+        content: '';
+        width: 20%;
+        height: 4px;
+        background-color: rgb(223, 22, 22);
+        position: absolute;
+        bottom: 0;
+    }
+    .available1{
+        padding-top: 15px;
+        padding-bottom: 10px;
+        /* font-size: 15px; */
+        font-size: 1.1rem;
+        line-height: 25px;
+        font-family: 'Questrial', sans-serif;
+    }
+    .describe1_1{
+        display: flex;
+        /* margin-bottom: 40px; */
+        margin-bottom: 40px;
+    }
+    .circle1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        color: white;
+        background-color: rgb(17, 17, 161);
+        font-size: 1.2rem;
+    }
+    .describe2_2{
+        padding-left: 14px;
+    }
+    .describe_1{
+        font-size: 1.3rem;
+        color: rgb(12, 12, 111);
+        padding-bottom: 5px;
+    }
+    .start1{
+        font-size: 1rem;
+        line-height: 25px;
+    }
+
+    .section3_3{
+        /* padding: 30px 40px; */
+        padding: 30px 50px;
+        width: 45%;
+        background-color: rgb(240, 243, 248);
+        border-radius: 10px;
+        border: 2px solid rgb(12, 12, 111);
+        z-index: 5;
+    }
+    .form_1{
+        margin: 0 auto;
+    }
+    .legal_1{
+        color: rgb(12, 12, 111);
+        /* font-size: 20px; */
+        font-size: 1.5rem;
+        text-align: left;
+        padding-block: 10px;
+        letter-spacing: 1.2px;
+        padding-inline: 10px;
+    }
+    .as1{
+        padding-inline: 10px;
+        text-align: justify;
+        /* font-size: 15px; */
+        font-size: 1.1rem;
+        line-height: 25px;
+        margin-bottom: 20px;
+        font-family: 'Questrial', sans-serif;
+    }
+    .field1{
+        padding-bottom: 30px;
+    }
+    .field2{
+        padding-bottom: 5px;
+    }
+    .input1_1{
+        width: 100%;
+        height: 50px;
+        border-radius: 50px;
+        border:1px solid rgba(177, 182, 238, 0.8);
+        padding-left: 20px;
+        font-size: 15px;
+        font-family: 'Questrial', sans-serif;
+    }
+    .input2_2{
+        width: 100%;
+        height: 120px;
+        border:1px solid rgba(177, 182, 238, 0.8);
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+        font-size: 15px;
+        font-family: 'Questrial', sans-serif;
+    }
+    
+    .submitting1{
+        padding: 0px 20px 20px 10px;
+        font-size: 0.9rem;
+        text-align: justify;
+        font-family: 'Questrial', sans-serif;
+    }
+    .submitting1 a{
+        color: red;
+    }
+    .fieldsubmit1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .input3_3{
+        height: 50px;
+        width: 90%;
+        border-radius: 50px;
+        border-style: none;
+        background-color: red;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: white;
+        letter-spacing: 2px;
+        font-family: 'Questrial', sans-serif;
+    }
+    
+    .online1{
+        display: flex;
+        justify-content: center;
+        margin-top: 14px;
+        align-items: center;
+    }
+    
+    .green1{
+        width: 12px;
+        height: 12px;
+        background-color: rgb(18, 221, 18);
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+    .lawyer_online1{
+        font-size: 14px;
+    }
+
+    .section4_4{
+        display: flex;
+        margin-top: -30px;
+        z-index: 4;
+    }
+    .section4{
+        display: none;
+    }
+    .review_1{
+        position: relative;
+        display: flex;
+        width: 80%;
+        background-color: rgb(240, 243, 248);
+        clip-path: polygon(0 0, 100% 0%, 94% 100%, 0% 100%);
+        z-index: 4;
+        /* padding: 60px 60px; */
+        padding: 50px 50px 30px 80px;
+    }
+    
+    .reviewcontainer1{
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        padding-block: 0px;
+    }
+    .review1_1{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        width: 100%;
+        margin-right: 0px;
+    }
+    .photocontainer1{
+        display: flex;
+        justify-content: center;
+    }
+    .photocontent1{
+        position: relative;
+        margin-bottom: 10px;
+        width: 60px;
+        height: 60px;
+    }
+    .image_1{
+        width: 60px;
+        height: 60px;
+        background: url(/pexels-photo-3992656.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        border-radius: 50%;
+    }
+    .image1_1{
+        width: 60px;
+        height: 60px;
+        background: url(/pexels-christina-morillo-1181424.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        border-radius: 50%;
+    }
+    
+    .circle1star1{
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        background-color: rgb(240, 243, 248);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+    .circlestar1{
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: rgb(250, 99, 45);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 3px;
+        right: 3px;
+    }
+    .star1{
+        width: 8px;
+        height: 8px;
+        background-color: white;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+    .sarah1{
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+        padding-inline: 5px;
+    }
+    .localpalmer{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+    }
+    .local1{
+        /* font-size: 15px; */
+        font-size: 1rem;
+        color: rgb(250, 127, 45);
+        padding-block: 0px 7px;
+        padding-left: 5px;
+    }
+    .palmer1{
+        /* font-size: 16px; */
+        font-size: 1.1rem;
+        letter-spacing: 1.2px;
+    }
+    .stars_1{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    .stars1_1{
+        width: 18px;
+        height: 18px;
+        background-color: rgb(250, 99, 45);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        margin: 4px;
+    }
+    .mothertext1{
+        /* font-size: 14px; */
+        font-size: 1rem;
+        text-align: left;
+        line-height: 23px;
+    }
+    
+    .footercontainer{
+        display: block;
+        z-index: 5;
+    }
+    .footercontent{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 80px;
+        padding-block: 20px 0;
+    
+    }
+    .footer_1{
+        padding-block: 10px 0;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        z-index: 5;
+        
+    }
+    .footer1_1{
+        padding-inline: 10px;
+        border-right: 2px solid rgba(46, 46, 46, 0.6);
+    }
+    .footer2_2{
+        border-right: none;
+    }
+    .footer_1 a{
+        color: rgba(46, 46, 46, 0.8);
+        font-size: 1rem;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(46, 46, 46, 0.6);
+    }
+    
+    .inc1{
+        padding: 20px 60px 20px 30px;
+        background-color: rgba(255, 255, 255, 0.739);
+        text-align: center;
+        font-size: 1rem;
+        color: rgba(97, 96, 96, 0.8);
         clip-path: polygon(6% 0%, 100% 0%, 100% 100%, 0% 100%);
         z-index: 5;
     }
